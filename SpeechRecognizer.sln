@@ -5,13 +5,15 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpeechRecognizer", "SpeechRecognizer\SpeechRecognizer.csproj", "{95334058-4047-47CD-B839-527EEA4707E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotController", "RobotController\RobotController.csproj", "{AE08AEAB-65AD-4DC2-9612-6A013833CC9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RobotController", "RobotController\RobotController.csproj", "{AE08AEAB-65AD-4DC2-9612-6A013833CC9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseCommandRecognizer", "BaseCommandRecognizer\BaseCommandRecognizer.csproj", "{346DB950-2BF7-4078-8962-2CD73BD89F5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseCommandRecognizer", "BaseCommandRecognizer\BaseCommandRecognizer.csproj", "{346DB950-2BF7-4078-8962-2CD73BD89F5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleRecognizer", "ConsoleRecognizer\ConsoleRecognizer.csproj", "{B91105CA-6FC3-4EA7-91B1-D874EABFED62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleRecognizer", "ConsoleRecognizer\ConsoleRecognizer.csproj", "{B91105CA-6FC3-4EA7-91B1-D874EABFED62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyTester", "KeyTester\KeyTester.csproj", "{2075EBA3-01AB-46C0-9DC6-480FF626147D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeyTester", "KeyTester\KeyTester.csproj", "{2075EBA3-01AB-46C0-9DC6-480FF626147D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotCommands", "RobotCommands\RobotCommands.csproj", "{429023AE-7995-474E-B2F7-293F975D3B64}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{2075EBA3-01AB-46C0-9DC6-480FF626147D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2075EBA3-01AB-46C0-9DC6-480FF626147D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2075EBA3-01AB-46C0-9DC6-480FF626147D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{429023AE-7995-474E-B2F7-293F975D3B64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{429023AE-7995-474E-B2F7-293F975D3B64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{429023AE-7995-474E-B2F7-293F975D3B64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{429023AE-7995-474E-B2F7-293F975D3B64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

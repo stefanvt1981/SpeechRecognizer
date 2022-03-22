@@ -64,10 +64,12 @@ internal sealed class ConsoleHostedService : IHostedService
 
                     await _speechCommandRecognizer.StartListeningForCommandsAsync();
 
-                    do
+                    
+                    Console.WriteLine("Press enter to quit.");
+                    if (Console.ReadKey().Key == ConsoleKey.Enter)
                     {
-                        _logger.LogInformation("Press Enter to stop");
-                    } while (Console.ReadKey().Key != ConsoleKey.Enter);
+                        await _speechCommandRecognizer.StopListeningForCommandsAsync();
+                    }
                 }
                 catch (Exception ex)
                 {

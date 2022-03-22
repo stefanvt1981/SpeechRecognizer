@@ -3,14 +3,16 @@ using Microsoft.Extensions.Logging;
 
 namespace ConsoleRecognizer
 {
-    public class ConsoleCommandRecognizer : CommandRecognizer
+    public class ConsoleCommandRecognizer : CommandRecognizer, IConsoleCommandRecognizer
     {
+        private bool _running = false;
+
         public ConsoleCommandRecognizer(ILogger<ConsoleCommandRecognizer> logger) : base(logger)
         {
-            //Console.
+
         }
 
-        public override event Action<string> Recognized;
+        public override event Action<string> Recognized = (command) => { };
 
         public override void Dispose()
         {
@@ -19,12 +21,21 @@ namespace ConsoleRecognizer
 
         public override Task StartListeningForCommandsAsync()
         {
-            throw new NotImplementedException();
+            _running = true;
+
+            while (_running)
+            {
+                var command = Console.ReadKey();
+                Recognized(command.Key.ToString());
+            }
+
+            return Task.CompletedTask;
         }
 
         public override Task StopListeningForCommandsAsync()
         {
-            throw new NotImplementedException();
+            _running = false;
+            return Task.CompletedTask;
         }
     }
 }

@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BaseCommandRecognizer\BaseCommandRecognizer.csproj" />
+    <ProjectReference Include="..\RobotCommands\RobotCommands.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -70,11 +70,13 @@ namespace SpeechRecognizer
 
         public override async Task StartListeningForCommandsAsync()
         {
+            _logger.LogDebug($"StartContinuousRecognitionAsync");
             await _speechRecognizer.StartContinuousRecognitionAsync().ConfigureAwait(false);
         }
 
         public override async Task StopListeningForCommandsAsync()
         {
+            _logger.LogDebug($"StopContinuousRecognitionAsync");
             await _speechRecognizer.StopKeywordRecognitionAsync().ConfigureAwait(false);
         }
 
